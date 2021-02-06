@@ -1,0 +1,34 @@
+/* font-family: "Aclonica"; */
+/* font-family: "MessinaSans"; */
+
+@font-face {
+    font-family: "Aclonica";
+    src: url("../fonts/Aclonica/Aclonica-Regular.eot");
+    src: url("../fonts/Aclonica/Aclonica-Regular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Aclonica/Aclonica-Regular.woff") format("woff"),
+    url("../fonts/Aclonica/Aclonica-Regular.ttf") format("truetype"),
+    url("../fonts/Aclonica/Aclonica-Regular.svg#Aclonica-Regular") format("svg");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "MessinaSans"; /*Regular*/
+    src: url("../fonts/CeraPro/CeraPro-Regular.eot");
+    src: url("../fonts/CeraPro/CeraPro-Regular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/CeraPro/CeraPro-Regular.woff") format("woff"),
+    url("../fonts/CeraPro/CeraPro-Regular.ttf") format("truetype"),
+    url("../fonts/CeraPro/CeraPro-Regular.svg#CeraPro-Regular") format("svg");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "CeraPro"; /*Medium*/
+    src: url("../fonts/CeraPro/CeraPro-Medium.eot");
+    src: url("../fonts/CeraPro/CeraPro-Medium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/CeraPro/CeraPro-Medium.woff") format("woff"),
+    url("../fonts/CeraPro/CeraPro-Medium.ttf") format("truetype"),
+    url("../fonts/CeraPro/CeraPro-Medium.svg#CeraPro-Medium") format("svg");
+    font-style: normal;
+    font-weight: 500;
+}

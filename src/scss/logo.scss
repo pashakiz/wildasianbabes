@@ -1,0 +1,39 @@
+.logo {
+  width: 219px;
+  height: 26px;
+  background-image: url('../img/icons/logo.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  @media (min-width: 992px) {
+    width: 395px;
+    height: 47px;
+  }
+}
+
+.logo_main {
+  width: 176px;
+  height: 58px;
+  margin: 0 auto;
+  background-image: url('../img/icons/logo-white.svg');
+  @media (min-width: 1200px) {
+    width: 483px;
+    min-width: 483px;
+    height: 58px;
+    background-image: url('../img/icons/logo.svg');
+    margin: 0;
+  }
+}
+
+.logo_login {
+  width: 166px;
+  height: 57px;
+  margin: 0 auto;
+  background-image: url('../img/icons/logo-white.svg');
+  @media (min-width: 1200px) {
+    width: 483px;
+    min-width: 483px;
+    height: 58px;
+    background-image: url('../img/icons/logo.svg');
+    margin: 0;
+  }
+}

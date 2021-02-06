@@ -1,0 +1,48 @@
+.index-content {
+  p {
+    line-height: 40px;
+    @media (min-width: 1200px) {
+      font-size: 18px;
+      line-height: 40px;
+    }
+  }
+}
+
+.collage {
+  overflow: hidden;
+  margin-bottom: 58px;
+  @media (min-width: 992px) {
+    overflow: visible;
+    position: relative;
+    margin-bottom: 66px;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 99px;
+  }
+  @media (min-width: 1500px) {
+    margin-bottom: 130px;
+  }
+  @media (min-width: 1920px) {
+    margin-bottom: 195px;
+  }
+}
+
+.collage__img_xs {
+  display: block;
+  width: 100%;
+  @media (min-width: 768px) {
+    position: static;
+    width: 100%;
+  }
+  @media (min-width: 992px) {
+    display: none;
+  }
+}
+
+.collage__img_lg {
+  display: none;
+  @media (min-width: 992px) {
+    display: block;
+    width: 100%;
+  }
+}

@@ -1,0 +1,202 @@
+h1 {
+  font-family: $font_family2;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  color: $font_color;
+  margin-bottom: 29px;
+  @media (min-width: 1200px) {
+    color: $font_color2;
+    font-size: 42px;
+    line-height: 65px;
+    margin-bottom: 35px;
+  }
+  @media (min-width: 1500px) {
+    font-size: 63px;
+    line-height: 100px;
+    margin-bottom: 50px;
+  }
+  @media (min-width: 1920px) {
+    font-size: 63px;
+    line-height: 100px;
+    margin-bottom: 113px;
+  }
+  &.h1_index {
+    color: $body_bg_color;
+    padding-top: 0;
+    margin-bottom: 50px;
+    font-size: 33px;
+    line-height: 62px;
+    text-align: center;
+    @media (min-width: 1200px) {
+      text-align: left;
+      color: $font_color2;
+      font-size: 37px;
+      line-height: 60px;
+      margin-bottom: 26px;
+    }
+    @media (min-width: 1500px) {
+      font-size: 55px;
+      line-height: 99px;
+      margin-bottom: 35px;
+    }
+    @media (min-width: 1920px) {
+      font-size: 60px;
+      line-height: 125px;
+      margin-bottom: 83px;
+    }
+  }
+  &.h1_login {
+    text-align: center;
+    color: $body_bg_color;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 41px;
+    letter-spacing: 5px;
+    @media (min-width: 1200px) {
+      text-align: left;
+      letter-spacing: 0;
+      color: $font_color2;
+      font-size: 26px;
+    }
+    @media (min-width: 1500px) {
+      font-size: 51px;
+      line-height: 73px;
+      margin-bottom: 30px;
+    }
+    @media (min-width: 1920px) {
+      font-size: 54px;
+      line-height: 80px;
+      margin-bottom: 48px;
+    }
+  }
+}
+h2 {
+  font-family: $font_family2;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: $font_color2;
+  text-align: left;
+  margin-bottom: 35px;
+  margin-top: 30px;
+  @media (min-width: 768px) {
+    margin-bottom: 60px;
+    margin-top: 0;
+  }
+  @media (min-width: 992px) {
+    font-size: 47px;
+    line-height: 60px;
+  }
+  &.h2_list {
+    margin-top: 0;
+    padding-top: 30px;
+    margin-bottom: 40px;
+    @media (min-width: 768px) {
+      margin-bottom: 60px;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    @media (min-width: 1200px) {
+      margin-bottom: 99px;
+    }
+    @media (min-width: 1500px) {
+      margin-bottom: 120px;
+    }
+  }
+  &.h2_login {
+    margin-top: 49px;
+    margin-bottom: 30px;
+    @media (min-width: 992px) {
+      margin-top: 100px;
+      margin-bottom: 70px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 30px;
+      line-height: 60px;
+      margin-top: 80px;
+      margin-bottom: 30px;
+    }
+    @media (min-width: 1500px) {
+      font-size: 47px;
+      line-height: 60px;
+      margin-top: 120px;
+      margin-bottom: 70px;
+    }
+    @media (min-width: 1920px) {
+      margin-top: 195px;
+      margin-bottom: 103px;
+    }
+  }
+}
+h3 {
+  font-family: $font_family2;
+  font-weight: 400;
+  color: #3E3842;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 35px;
+  margin-bottom: 26px;
+  @media (min-width: 768px) {
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+}
+.word-break {
+  word-break: break-word;
+}
+p {
+  line-height: 32px;
+  margin-bottom: 1.5rem;
+  @media (min-width: 768px) {
+    line-height: 42px;
+  }
+  b {
+    &.bmark {
+      font-weight: 700;
+      font-family: $font_family;
+    }
+  }
+}
+a {
+  color: $link_color;
+  text-decoration: none;
+  &:hover {
+    color: $link_hover_color;
+    text-decoration: none;
+  }
+}
+.link1 {
+  font-family: $link_txt_family;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(243, 228, 225, 0.7);
+  &:hover {
+    color: $body_bg_color;
+    text-decoration: underline;
+  }
+  @media (min-width: 1200px) {
+    color: rgba(78, 70, 79, 0.7);
+    &:hover {
+      color: $link_hover_color;
+      text-decoration: underline;
+    }
+  }
+  @media (min-width: 1500px) {
+    font-size: 20px;
+  }
+}
+.link2 {
+  font-family: $font_family2;
+  color: $font_color;
+  font-weight: 400;
+  font-size: 12px;
+  &:hover {
+    color: $btn_hover_bg_color;
+  }
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+}
