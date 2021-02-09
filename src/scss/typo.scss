@@ -79,7 +79,7 @@ h2 {
   color: $font_color;
   text-align: left;
   margin-bottom: 46px;
-  margin-top: 30px;
+  margin-top: 0;
   br.h2__br {
     display: none;
   }
@@ -87,7 +87,6 @@ h2 {
     font-size: 35px;
     line-height: 60px;
     margin-bottom: 60px;
-    margin-top: 0;
   }
   @media (min-width: 992px) {
     font-size: 52px;
