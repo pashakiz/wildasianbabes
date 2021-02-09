@@ -1,32 +1,28 @@
 .footer {
-  background-color: $bg_dark_1;
+  background-color: $body_bg_color;
+  border-top: 1px solid #B6B1AD;
   a.footer__link {
-    font-family: $font_family2;
+    font-family: $font_family;
     font-weight: 400;
     color: $footer_text_color;
-    font-size: 11px;
-    line-height: 15px;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
   }
   a.footer__link:hover {
     color: $footer_text_color_hover;
     text-decoration: none;
   }
   a.footer__link + a.footer__link {
-    margin-top: 37px;
+    margin-top: 29px;
   }
   @media (min-width: 992px) {
     a.footer__link {
-      font-size: 14px;
+      font-size: 16px;
       line-height: 20px;
     }
     a.footer__link + a.footer__link {
-      margin-left: 148px;
       margin-top: 0;
-    }
-  }
-  @media (min-width: 1920px) {
-    a.footer__link + a.footer__link {
-      margin-left: 148px;
     }
   }
 }
@@ -34,7 +30,7 @@
 .footer__bottom {
   padding: 59px 0;
   @media (min-width: 992px) {
-    padding: 46px 0 42px;
+    padding: 53px 0 53px;
   }
 }
 

@@ -183,6 +183,8 @@
     display: block;
   }
   @media (min-width: 992px) {
+    position: absolute;
+    margin-right: -310px;
     .notice {
       margin-left: 11px;
       position: relative;

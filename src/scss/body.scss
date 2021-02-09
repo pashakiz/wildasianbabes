@@ -17,14 +17,6 @@ body {
   @media (min-width: 1920px) {
     max-width: $container-xxxl + $grid-gutter-width;
   }
-  &.container_anytext {
-    @media (min-width: 1200px) {
-      padding-top: 25px;
-    }
-    @media (min-width: 1920px) {
-      padding-top: 90px;
-    }
-  }
   &.container_settings {
     @media (min-width: 1200px) {
       padding-top: 37px;
@@ -38,7 +30,7 @@ body {
       //max-width: 1615px;
     }
     @media (min-width: 1920px) {
-      max-width: 1671px;
+      //max-width: 1671px;
     }
   }
   &.container_index {
