@@ -191,13 +191,23 @@ textarea.form-control {
   }
 }
 .form-group_swicher {
-  margin-bottom: 31px;
+  padding: 0 15px 27px;
+  border-bottom: 1px solid #B6B1AD;
+  margin-bottom: 40px;
+  @media (min-width: 576px) {
+    border: none;
+    padding: 0;
+  }
   @media (min-width: 768px) {
-    margin-bottom: 31px;
+    margin-bottom: 45px;
   }
 }
 .form-group_btn-unsuscr {
+  padding: 0 15px;
   margin-top: 31px;
+  @media (min-width: 576px) {
+    padding: 0;
+  }
   @media (min-width: 768px) {
     margin-top: 70px;
   }
@@ -704,5 +714,12 @@ textarea.form-control {
   .col-xxxl-60 {
     flex: 0 0 61%;
     max-width: 61%;
+  }
+}
+
+@media (min-width: 576px) {
+  .px-sm-15px {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 }

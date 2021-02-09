@@ -46,17 +46,7 @@ body {
       padding-left: 15px;
     }
   }
-  &.container_unsubscribe {
-    @media (min-width: 768px) {
-      max-width: 700px;
-    }
-    @media (min-width: 1200px) {
-      padding-top: 25px;
-    }
-    @media (min-width: 1920px) {
-      padding-top: 90px;
-    }
-  }
+  &.container_unsubscribe {}
   &.container_narrow {
     @media (min-width: 1500px) {
       max-width: $container-xxl + $grid-gutter-width;
