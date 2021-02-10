@@ -1,17 +1,15 @@
 .settings-form {
-  padding-top: 37px;
+  padding-top: 38px;
   @media (min-width: 992px) {
     padding-top: 70px;
   }
   @media (min-width: 1200px) {
     padding-top: 0;
-    padding-right: 10px;
+    max-width: 442px;
+    margin-left: 40px;
   }
   @media (min-width: 1500px) {
-    padding-right: 20px;
-  }
-  @media (min-width: 1920px) {
-    padding-right: 57px;
+    margin-left: 70px;
   }
 }
 
@@ -21,24 +19,19 @@
   @media (min-width: 400px) {
     width: 320px;
     max-width: 320px;
-    margin: 60px auto 0;
+    margin: 0 auto;
   }
   @media (min-width: 768px) {
-    width: 600px;
-    max-width: 600px;
+    width: 540px;
+    max-width: 540px;
   }
   @media (min-width: 1200px) {
-    width: 520px;
-    max-width: 520px;
+    width: 540px;
+    max-width: 540px;
     margin: 0 0 0 auto;
   }
   @media (min-width: 1500px) {
-    width: 580px;
-    max-width: 580px;
-  }
-  @media (min-width: 1920px) {
-    width: 610px;
-    max-width: 610px;
+    margin: 0 20px 0 auto;
   }
 }
 
@@ -49,27 +42,19 @@
   border-radius: 0;
   width: 100%;
   max-width: 100%;
-  height: 498px;
-  max-height: 498px;
+  height: 533px;
+  max-height: 533px;
   overflow: hidden;
   background-color: $bg_dark_1;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
   @media (min-width: 768px) {
-    height: 933px;
-    max-height: 933px;
+    height: 700px;
+    max-height: 700px;
   }
   @media (min-width: 1200px) {
-    height: 437px;
-    max-height: 437px;
-  }
-  @media (min-width: 1500px) {
-    height: 488px;
-    max-height: 488px;
-  }
-  @media (min-width: 1920px) {
-    height: 513px;
-    max-height: 513px;
+    height: 700px;
+    max-height: 700px;
   }
 }

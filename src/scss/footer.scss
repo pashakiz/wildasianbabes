@@ -1,6 +1,6 @@
 .footer {
   background-color: $body_bg_color;
-  border-top: 1px solid #B6B1AD;
+  border-top: 1px solid $input_border_color;
   a.footer__link {
     font-family: $font_family;
     font-weight: 400;

@@ -205,11 +205,9 @@ a {
   font-family: $font_family2;
   color: $font_color;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 17px;
+  text-transform: uppercase;
   &:hover {
-    color: $btn_hover_bg_color;
-  }
-  @media (min-width: 768px) {
-    font-size: 18px;
+    color: $link_hover_color;
   }
 }
