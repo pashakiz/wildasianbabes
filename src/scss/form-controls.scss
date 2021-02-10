@@ -617,7 +617,7 @@ textarea.form-control {
 .btn {
   width: 100%;
   height: 64px;
-  padding: 14px 35px;                   /**/
+  padding: 24px 35px 23px;
   border-radius: 100%;
   border: 1px solid #000;
   font-family: $font_family2;
@@ -652,7 +652,7 @@ textarea.form-control {
   @media (min-width: 992px) {
     width: auto;
     font-size: 17px;
-    padding: 25px 60px;                   /**/
+    padding: 26px 60px;
     height: 70px;
     line-height: 19px;
     &::after {
