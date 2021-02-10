@@ -232,12 +232,13 @@ textarea.form-control {
       left: $checkbox_xs_left;
       width: $checkbox_xs_width;
       height: $checkbox_xs_height;
-      //background-color: $checkbox_bg_color;
+      background-color: $checkbox_bg_color;
       border: $checkbox_border !important;
       outline: none !important;
-      border-radius: 0;
-      background: no-repeat 100% / 100% 100%;
-      background-image: url($checkbox_bg_icon);
+      border-radius: 100%;
+      z-index: 1;
+      //background: no-repeat 100% / 100% 100%;
+      //background-image: url($checkbox_bg_icon);
     }
     &::after {
       top: $checkbox_xs_marker_top;
@@ -245,7 +246,9 @@ textarea.form-control {
       width: $checkbox_xs_marker_width;
       height: $checkbox_xs_marker_height;
       outline: none !important;
-      background: no-repeat 50% / 50% 50%;
+      background: no-repeat 41% 35% / 42% 42%;
+      border-radius: 100%;
+      z-index: 0;
     }
     @media (min-width: 992px) {
       font-size: $checkbox_txt_size;
@@ -261,6 +264,7 @@ textarea.form-control {
         left: $checkbox_marker_left;
         width: $checkbox_marker_width;
         height: $checkbox_marker_height;
+        background: no-repeat 36% 15% / 40% 40%;
       }
     }
   }
@@ -268,13 +272,12 @@ textarea.form-control {
     &:checked {
       ~.custom-control-label {
         &::after {
-          //background-image: url($checkbox_bg_icon_checked);
-          background-image: none;
+          background-color: $checkbox_checked_bg_color;
+          background-image: url($checkbox_bg_icon_checked);
         }
         &::before {
-          background-image: url($checkbox_bg_icon_checked);
           border-color: $checkbox_checked_border_color;
-          background-color: $checkbox_checked_bg_color;
+          background-color: $checkbox_bg_color;
         }
       }
     }
@@ -613,20 +616,34 @@ textarea.form-control {
 
 .btn {
   width: 100%;
-  height: 60px;
-  padding: 14px 35px;
-  border-radius: 0;
+  height: 64px;
+  padding: 14px 35px;                   /**/
+  border-radius: 100%;
+  border: 1px solid #000;
   font-family: $font_family2;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
-  color: $font_color;
-  background-color: $btn_bg_color;
+  color: $font_color3;
+  line-height: 18px;
   position: relative;
-  line-height: 30px;
-  letter-spacing: 2px;
+  text-transform: uppercase;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    top: 7px;
+    left: 11px;
+    background-color: $btn_bg_color;
+    z-index: -10;
+  }
   &:hover {
-    color: $font_color;
-    background-color: $btn_hover_bg_color;
+    &::after {
+      color: $font_color;
+      background-color: $btn_hover_bg_color;
+    }
   }
   &:focus {
     outline: none;
@@ -634,11 +651,14 @@ textarea.form-control {
   }
   @media (min-width: 992px) {
     width: auto;
-    font-size: 23px;
-    padding: 25px 60px;
-    height: 99px;
-    line-height: 50px;
-    letter-spacing: 4px;
+    font-size: 17px;
+    padding: 25px 60px;                   /**/
+    height: 70px;
+    line-height: 19px;
+    &::after {
+      top: 6px;
+      left: 11px;
+    }
   }
   &.btn_1 { //index
     height: 60px;
@@ -664,9 +684,7 @@ textarea.form-control {
     font-size: 5px;
     line-height: 9px;
     padding: 10px 4px 9px;
-    border-radius: 100%;
     text-align: center;
-    letter-spacing: 1px;
     &:hover {
       color: $font_color;
       background-color: $btn_hover_bg_color;
@@ -677,7 +695,6 @@ textarea.form-control {
       font-size: 9px;
       line-height: 16px;
       padding: 20px 11px 25px;
-      letter-spacing: 2px;
     }
   }
   &.btn_3 { //change photo
