@@ -1,71 +1,75 @@
 <%= _.template(require('./../includes/header.html'))() %>
     <main class="main">
-        <div class="user-profile-slider-wrap d-xl-none">
-            <div class="user-profile-slider owl-carousel">
-                <div class="slide" style="background-image: url('img/photos/ava.jpg');"></div>
-                <div class="slide" style="background-image: url('img/photos/user-02.jpg');"></div>
-                <div class="slide" style="background-image: url('img/photos/user-03.jpg');"></div>
-                <div class="slide" style="background-image: url('img/photos/ava.jpg');"></div>
-                <div class="slide" style="background-image: url('img/photos/user-04.jpg');"></div>
-            </div>
-            <div class="user-profile-btn-wrap">
-                <a class="btn btn_w100 user-profile-btn" href="#">Claim Her</a>
-            </div>
-        </div>
         <div class="container container_narrow">
             <div class="row">
                 <div class="col-12 col-xl-6">
+                    <div class="settings-photo user-profile-img">
+                        <div class="profile-photo">
+                            <div class="user-profile-slider-wrap">
+                                <div class="user-profile-slider owl-carousel">
+                                    <div class="slide" style="background-image: url('img/photos/ava.jpg');"></div>
+                                    <div class="slide" style="background-image: url('img/photos/user-01.jpg');"></div>
+                                    <div class="slide" style="background-image: url('img/photos/user-02.jpg');"></div>
+                                    <div class="slide" style="background-image: url('img/photos/user-03.jpg');"></div>
+                                    <div class="slide" style="background-image: url('img/photos/user-04.jpg');"></div>
+                                    <div class="slide" style="background-image: url('img/photos/user-05.jpg');"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6">
                     <div class="settings-form user-profile-info">
                         <div class="user-profile-info__inner">
-                            <div class="user-profile-row">
-                                <div class="user-profile-name">Anastasia, 32</div>
-                                <div class="user-profile-loc">Mon Real (300 km)</div>
+                            <div class="user-profile-row d-flex flex-column flex-xl-row align-items-center">
+                                <div class="user-profile-name">Jio Jo, 19</div>
+                                <div class="user-profile-separator"></div>
+                                <div class="user-profile-loc">Tokio - 1000 km</div>
                             </div>
-                            <div class="user-profile-title text-center text-xl-left">Compability score: 15 000</div>
-                            <div class="compatibility compatibility_mb d-flex justify-content-between justify-content-sm-center justify-content-xl-start justify-content-xl-start">
+                            <div class="compatibility compatibility_mb d-flex justify-content-between justify-content-sm-center justify-content-xl-between">
                                 <div class="compatibility__chart">
                                     <div class="compatibility__progress">
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar_bg" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 21">
+                                            <circle fill="none" stroke="#000" cx="10.5" cy="10.5" r="10"/>
+                                            <path fill="none" stroke="#000" d="M20.07 10.55H36"/>
+                                            <circle fill="none" stroke="#000" cx="10.5" cy="10.5" r="10" transform="translate(35)"/>
+                                            <path fill="none" stroke="#000" d="M55.23 10.55h15.94"/>
+                                            <circle fill="none" stroke="#000" cx="10.5" cy="10.5" r="10" transform="translate(71)"/>
+                                        </svg>
                                     </div>
                                     <div class="compatibility__title">Interests</div>
                                 </div>
                                 <div class="compatibility__chart">
                                     <div class="compatibility__progress">
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar_bg" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 21">
+                                            <circle fill="#ebd4d4" stroke="#000" cx="10.5" cy="10.5" r="10"/>
+                                            <path fill="none" stroke="#000" d="M20.07 10.55H36"/>
+                                            <circle fill="#ebd4d4" stroke="#000" cx="10.5" cy="10.5" r="10" transform="translate(35)"/>
+                                            <path fill="none" stroke="#000" d="M55.23 10.55h15.94"/>
+                                            <circle fill="none" stroke="#000" cx="10.5" cy="10.5" r="10" transform="translate(71)"/>
+                                        </svg>
                                     </div>
                                     <div class="compatibility__title">Location</div>
                                 </div>
                                 <div class="compatibility__chart">
                                     <div class="compatibility__progress">
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar_bg" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 21">
+                                            <circle fill="#ebd4d4" stroke="#000" cx="10.5" cy="10.5" r="10"/>
+                                            <path fill="none" stroke="#000" d="M20.07 10.55H36"/>
+                                            <circle fill="#ebd4d4" stroke="#000" cx="10.5" cy="10.5" r="10" transform="translate(35)"/>
+                                            <path fill="none" stroke="#000" d="M55.23 10.55h15.94"/>
+                                            <circle fill="#ebd4d4" stroke="#000" cx="10.5" cy="10.5" r="10" transform="translate(71)"/>
+                                        </svg>
                                     </div>
                                     <div class="compatibility__title">Matches</div>
                                 </div>
                             </div>
                         </div>
+                        <a class="btn btn_w100 user-profile-btn" href="#">Claim Her</a>
                         <div class="user-profile-about">
                             <div class="user-profile-title user-profile-about__title text-center text-xl-left">About her</div>
                             <p>We believe in unconditional sincerity and transparency. That's why our users' profiles reflect this in every possible way. With a simple and friendly layout, our profiles clearly show all the details you need to make an informed decision.</p>
                             <p>We have created a unique combination system that consists of three main factors that produce similarity of thought and productive connections: Life, freedom and culture. NF, in an abbreviated form, connects people who have interests in similar activities, passions and future aspirations.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-xl-6">
-                    <div class="settings-photo user-profile-img d-none d-xl-block">
-                        <div class="profile-photo user-profile-photo" style="background-image: url('img/photos/ava.jpg');"></div>
-                        <a class="btn btn_w100 user-profile-btn" href="#">Claim Her</a>
-                        <div class="user-profile-gallery owl-carousel d-none d-xl-flex justify-content-between">
-                            <div class="user-profile-gallery__item" style="background-image: url('img/photos/ava.jpg')"></div>
-                            <div class="user-profile-gallery__item" style="background-image: url('img/photos/user-02.jpg')"></div>
-                            <div class="user-profile-gallery__item" style="background-image: url('img/photos/user-03.jpg')"></div>
-                            <div class="user-profile-gallery__item" style="background-image: url('img/photos/ava.jpg')"></div>
-                            <div class="user-profile-gallery__item" style="background-image: url('img/photos/user-04.jpg')"></div>
                         </div>
                     </div>
                 </div>

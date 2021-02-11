@@ -58,13 +58,6 @@ $(function() {
             }
         });
 
-        //gallery on desktop
-        $('.user-profile-gallery').on('click', '.user-profile-gallery__item', function(){
-            let url = $(this).css('background-image');
-            url = url.replace('url(','').replace(')','').replace(/\"/gi, "");
-            $('.user-profile-photo').css('background-image', 'url(' + url + ')');
-        });
-
         //slider (Profile gallery) for desktop
         $('.owl-carousel.user-list_slider').owlCarousel({
             loop: true,
