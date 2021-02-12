@@ -117,28 +117,31 @@
   }
 
   &.compatibility_list {
+    margin-bottom: 14px;
+    @media (min-width: $user_list_item_breakpoint) {
+      margin-bottom: 31px;
+    }
     .compatibility__title {
-      font-size: 9px;
-      margin-top: 6px;
+      font-size: 8px;
+      margin-top: 7px;
       @media (min-width: $user_list_item_breakpoint) {
-        margin-top: 15px;
-        font-size: 17px;
+        margin-top: 17px;
+        font-size: 15px;
       }
     }
     .compatibility__progress {
-      width: 36px;
-      height: 10px;
-      margin: auto;
+      width: 34px;
+      height: 9px;
       @media (min-width: $user_list_item_breakpoint) {
-        width: 71px;
-        height: 20px;
+        width: 65px;
+        height: 15px;
       }
     }
     .compatibility__chart {
       +.compatibility__chart {
-        margin-left: 10px;
+        margin-left: 5px;
         @media (min-width: $user_list_item_breakpoint) {
-          margin-left: 25px;
+          margin-left: 20px;
         }
       }
     }

@@ -3,17 +3,17 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  padding-bottom: 26px;
+  padding-bottom: 69px;
   justify-content: space-between;
   @media (min-width: 348px) {
     justify-content: space-around;
   }
   @media (min-width: 1200px) {
-    padding-bottom: 38px;
+    padding-bottom: 100px;
   }
   @media (min-width: 1920px) {
     justify-content: space-between;
-    padding: 0 0 53px;
+    padding: 0 0 189px;
   }
   &.user-list_slider {
     @media (min-width: 992px) {
@@ -37,121 +37,123 @@
 }
 
 .user-list-item {
-  width: 290px;
+  width: 134px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: transparent;
   border-radius: 0;
-  margin: 0 auto 31px;
+  margin: 0 0 34px;
   position: relative;
+  box-sizing: content-box;
   @media (min-width: $user_list_item_breakpoint) {
-    width: 563px;
-    margin: 0 0 94px;
-    border-radius: 0;
+    width: 282px;
+    margin: 0 15px 0 0;
+  }
+  @media (min-width: 1200px) {
+    padding-right: 30px;
+    border-right: 1px solid $input_border_color;
+    margin-right: 30px;
+  }
+  @media (min-width: 1500px) {
+    padding-right: 58px;
+    border-right: 1px solid $input_border_color;
+    margin-right: 58px;
   }
   .user-list-item__pic {
-    width: 117px;
-    max-width: 117px;
-    min-width: 117px;
-    height: 103px;
-    max-height: 103px;
+    width: 134px;
+    max-width: 134px;
+    min-width: 134px;
+    height: 169px;
+    max-height: 169px;
     border-radius: 0;
     //overflow: hidden;
     @media (min-width: $user_list_item_breakpoint) {
-      width: 231px;
-      max-width: 231px;
-      min-width: 231px;
-      height: 203px;
-      max-height: 203px;
-      border-radius: 0;
+      width: 282px;
+      max-width: 282px;
+      min-width: 282px;
+      height: 394px;
+      max-height: 394px;
     }
     .user-list-item__img {
       width: 100%;
-      height: 103px;
+      height: 169px;
       background-repeat: no-repeat;
       background-position: 50%;
       background-size: cover;
       position: relative;
       @media (min-width: $user_list_item_breakpoint) {
-        height: 203px;
-      }
-    }
-    .user-list-item__btn {
-      position: absolute;
-      top: -10px;
-      right: -8px;
-      @media (min-width: $user_list_item_breakpoint) {
-        top: -20px;
-        right: -15px;
+        height: 394px;
       }
     }
   }
   .user-list-item__inf {
-    color: $font_color;
-    padding: 7px 0 2px 29px;
-    height: 103px;
-    max-height: 103px;
+    height: 117px;
+    max-height: 117px;
+    padding: 17px 0 0;
     @media (min-width: $user_list_item_breakpoint) {
-      padding: 19px 0 3px 48px;
-      height: 203px;
-      max-height: 203px;
+      height: 260px;
+      max-height: 260px;
+      padding: 38px 0 0;
     }
     .user-list-item__title {
-      margin-bottom: 18px;
+      text-align: center;
+      color: $font_color;
+      margin-bottom: 11px;
+      position: relative;
       @media (min-width: $user_list_item_breakpoint) {
-        margin-bottom: 39px;
+        margin-bottom: 27px;
       }
       .user-list-item__name {
         font-family: $font_family2;
         font-weight: 400;
-        font-size: 10px;
+        font-size: 14px;
         line-height: 1;
-        margin-bottom: 7px;
         @media (min-width: $user_list_item_breakpoint) {
-          margin-bottom: 14px;
-          font-size: 18px;
+          font-size: 33px;
         }
       }
       .user-list-item__loc {
+        text-transform: uppercase;
         font-family: $font_family;
         font-weight: 400;
-        font-size: 9px;
+        font-size: 8px;
         line-height: 1;
+        position: absolute;
+        top: -25px;
+        z-index: 1;
+        background-color: $body_bg_color;
+        border-radius: 100%;
+        width: 104px;
+        height: 16px;
+        padding: 5px 7px 0;
         @media (min-width: $user_list_item_breakpoint) {
-          font-size: 17px;
-          line-height: 1;
+          width: 185px;
+          height: 34px;
+          padding: 10px 10px 0;
+          font-size: 15px;
+          top: -53px;
         }
       }
     }
-    .compatibility-title {
-      font-family: $font_family2;
-      font-weight: 400;
-      font-size: 8px;
-      margin-bottom: 11px;
-      text-transform: uppercase;
-      @media (min-width: $user_list_item_breakpoint) {
-        font-size: 14px;
-        margin-bottom: 18px;
-      }
-    }
+    .user-list-item__btn {}
   }
 }
 
 .user-list-title {
   font-family: $font_family2;
   font-weight: 400;
-  font-size: 13px;
-  line-height: 27px;
-  margin-bottom: 28px;
+  font-size: 18px;
+  line-height: 35px;
+  margin-bottom: 33px;
   color: $user_list_title_color;
   @media (min-width: $user_list_item_breakpoint) {
-    font-size: 32px;
-    line-height: 57px;
-    margin-bottom: 65px;
+    font-size: 33px;
+    line-height: 55px;
+    margin-bottom: 90px;
+    text-align: center;
   }
   @media (min-width: 1200px) {
-    margin-bottom: 81px;
-    text-align: center;
+    margin-bottom: 140px;
   }
   @media (min-width: 1920px) {
     //padding-top: 40px;
