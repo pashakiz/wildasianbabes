@@ -42,21 +42,7 @@ $(function() {
             dots:true
         });
 
-        //slider (Profile gallery) for desktop
-        $('.owl-carousel.user-profile-gallery').owlCarousel({
-            loop: true,
-            dots: false,
-            items: 4,
-            autoWidth: true,
-            responsive:{
-                1200:{
-                    margin: 10
-                },
-                1920:{
-                    margin: 12
-                }
-            }
-        });
+        owlDotsBeauty('.user-profile-slider');
 
         //slider (Profile gallery) for desktop
         $('.owl-carousel.user-list_slider').owlCarousel({
@@ -85,6 +71,19 @@ $(function() {
 
     });
 
+    //count all items and change margins if many
+    function owlDotsBeauty(el_class) {
+        let userProfileSliderItems = document.querySelectorAll(el_class + ' .owl-dot').length;
+        console.log('userProfileSliderItems', userProfileSliderItems);
+        if (userProfileSliderItems > 9 && userProfileSliderItems < 16) {
+            document.querySelector(el_class).classList.add('user-profile-slider_many-items1');
+        }
+        if (userProfileSliderItems > 15) {
+            document.querySelector(el_class).classList.add('user-profile-slider_many-items2');
+        }
+    }
+
+    //init owl carousel for custom screen width
     function owlInit(el_class) {
         if (window.innerWidth < 1200) {
             $(el_class).addClass('owl-carousel');
