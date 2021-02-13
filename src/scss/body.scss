@@ -22,17 +22,7 @@ body {
       padding-top: 37px;
     }
   }
-  &.container_wide {
-    @media (min-width: 1200px) {
-      //max-width: 1615px;
-    }
-    @media (min-width: 1500px) {
-      //max-width: 1615px;
-    }
-    @media (min-width: 1920px) {
-      //max-width: 1671px;
-    }
-  }
+  &.container_wide {}
   &.container_index {
     @media (min-width: 1920px) {
       max-width: 1535px;

@@ -19,9 +19,10 @@ $font_size_mobile:          16px;
 $body_mb:                   210px;
 $body_mb_mob:               95px;
 $font_family2:              "Aclonica", serif;
-/**/$link_txt_family:           $font_family;
-/**/$link_color:                $btn_hover_bg_color;
+$link_txt_family:           $font_family;
+$link_color:                $font_color;
 $link_hover_color:          #DC9A9A;
+$link_hover_color2:         #FFBFBF;
 $footer_height:             154px;
 $footer_height_mob:         302px;
 $footer_text_color:         $font_color;
@@ -121,28 +122,28 @@ $radio_active_bg_color:      $radio_bg_color;
 $radio_bg_icon:              "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='4' fill='%234E464F'/%3E%3C/svg%3E";
 
 //Custom Switch
-/**/$switch_bg_width: 115px;
-/**/$switch_bg_height: 48px;
-/**/$switch_bg_width_mob: 76px;
-/**/$switch_bg_height_mob: 32px;
-/**/$switch_bg_border_radius: 0;
-/**/$switch_dot_size_w: 28px;
-/**/$switch_dot_size_h: 28px;
-/**/$switch_dot_size_w_mob: 18px;
-/**/$switch_dot_size_h_mob: 18px;
-/**/$switch_dot_border_radius: 0;
-/**/$switch_bg_color: $bg_light_1;
-/**/$switch_bg_color_active: $switch_bg_color;
-/**/$switch_bg_color_checked: $switch_bg_color;
-/**/$switch_dot_color: $body_bg_color;
-/**/$switch_dot_color_active: $btn_bg_color;
-/**/$switch_border: none;
-/**/$switch_border_active: none;
-/**/$switch_txt: '';
-/**/$switch_txt_color: $font_color;
-/**/$switch_txt_color_checked: $font_color;
-/**/$switch_margin_right: 59px;
-/**/$switch_margin_right_mob: 29px;
+$switch_bg_width: 115px;
+$switch_bg_height: 48px;
+$switch_bg_width_mob: 76px;
+$switch_bg_height_mob: 32px;
+$switch_bg_border_radius: 0;
+$switch_dot_size_w: 28px;
+$switch_dot_size_h: 28px;
+$switch_dot_size_w_mob: 18px;
+$switch_dot_size_h_mob: 18px;
+$switch_dot_border_radius: 0;
+$switch_bg_color: $bg_light_1;
+$switch_bg_color_active: $switch_bg_color;
+$switch_bg_color_checked: $switch_bg_color;
+$switch_dot_color: $body_bg_color;
+$switch_dot_color_active: $btn_bg_color;
+$switch_border: none;
+$switch_border_active: none;
+$switch_txt: '';
+$switch_txt_color: $font_color;
+$switch_txt_color_checked: $font_color;
+$switch_margin_right: 59px;
+$switch_margin_right_mob: 29px;
 
 //Bootstrap container width
 @function get-container-width($key: 'md') {
@@ -150,6 +151,6 @@ $radio_bg_icon:              "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org
 }
 
 //User List page wider
-$user_list_wider:           160px;/**/
+$user_list_wider:           160px;
 $user_list_item_breakpoint: 992px;
 $user_list_title_color:     $font_color;

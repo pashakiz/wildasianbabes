@@ -50,22 +50,26 @@ h1 {
     text-align: center;
     color: $body_bg_color;
     margin-bottom: 25px;
-    font-size: 20px;
-    line-height: 41px;
+    font-size: 25px;
+    line-height: 37px;
+    text-transform: uppercase;
     @media (min-width: 1200px) {
+      text-transform: none;
       text-align: left;
-      color: $font_color2;
-      font-size: 26px;
+      color: $font_color;
+      font-size: 39px;
+      line-height: 57px;
+      margin-bottom: 37px;
     }
     @media (min-width: 1500px) {
-      font-size: 51px;
-      line-height: 73px;
-      margin-bottom: 30px;
+      font-size: 43px;
+      line-height: 63px;
+      margin-bottom: 41px;
     }
     @media (min-width: 1920px) {
-      font-size: 54px;
+      font-size: 55px;
       line-height: 80px;
-      margin-bottom: 48px;
+      margin-bottom: 53px;
     }
   }
 }
@@ -185,20 +189,18 @@ a {
   font-family: $link_txt_family;
   font-weight: 400;
   font-size: 15px;
-  color: rgba(243, 228, 225, 0.7);
+  color: $body_bg_color;
+  text-transform: uppercase;
   &:hover {
-    color: $body_bg_color;
-    text-decoration: underline;
+    color: $link_hover_color2;
+    text-decoration: none;
   }
   @media (min-width: 1200px) {
-    color: rgba(78, 70, 79, 0.7);
+    font-size: 18px;
+    color: $link_color;
     &:hover {
       color: $link_hover_color;
-      text-decoration: underline;
     }
-  }
-  @media (min-width: 1500px) {
-    font-size: 20px;
   }
 }
 .link2 {

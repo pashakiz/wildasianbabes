@@ -1,34 +1,40 @@
 <%= _.template(require('./../includes/header-index.html'))() %>
     <header class="header header_bg bg-05">
-        <div class="container container_wide">
-            <div class="header__row header__row_login">
-                <div class="d-flex flex-column flex-lg-row justify-content-start align-items-center">
-                    <div class="logo logo_login"></div>
-                </div>
-            </div>
-            <div class="header__row header__row_form">
+        <div class="header__inner">
+            <div class="container">
                 <div class="header__info">
-                    <h1 class="h1_login">Signup access <br class="d-xl-none d-xxl-block">your matches</h1>
-                    <form action="">
-                        <div class="form-group form-group_login">
-                            <input class="form-control form-control_header" type="text" placeholder="Email">
+                    <div class="header__row header__row_login">
+                        <div class="d-flex justify-content-center justify-content-xl-start align-items-center">
+                            <div class="logo logo_login">
+                                <div class="logo__title">wild asian babes</div>
+                            </div>
                         </div>
-                        <div class="form-group form-group_login">
-                            <input class="form-control form-control_header" type="password" placeholder="Password">
+                    </div>
+                    <div class="header__row header__row_form">
+                        <h1 class="h1_login">Signup access<br>your matches</h1>
+                        <div class="header__form">
+                            <form action="">
+                                <div class="form-group form-group_login">
+                                    <input class="form-control form-control_header" type="text" placeholder="Email">
+                                </div>
+                                <div class="form-group form-group_login">
+                                    <input class="form-control form-control_header" type="password" placeholder="Password">
+                                </div>
+                                <div class="form-group form-group_login form-group_login-btn">
+                                    <button class="btn btn_1 btn_w100">Sign Up</button>
+                                </div>
+                                <div class="form-group form-group_up-login text-center">
+                                    <a class="link1" href="login.html">Or Log In?</a>
+                                </div>
+                            </form>
                         </div>
-                        <div class="form-group form-group_login form-group_login-btn">
-                            <button class="btn btn_1 btn_w100">Sign Up</button>
-                        </div>
-                        <div class="form-group form-group_up-login text-center">
-                            <a class="link1" href="login.html">Or Log In?</a>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
     <main class="main">
-        <div class="container container_wide">
+        <div class="container">
             <h2 class="h2_login">Meet your dream</h2>
             <div class="user-list user-list_slider owl-carousel">
                 <div class="user-list-item">
