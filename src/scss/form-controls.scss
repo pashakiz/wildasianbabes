@@ -683,7 +683,7 @@ textarea.form-control {
     line-height: 9px;
     padding: 10px 20px;
     text-align: center;
-    @media (min-width: 992px) {
+    @media (min-width: $user_list_item_breakpoint) {
       width: 282px;
       height: 76px;
       font-size: 17px;

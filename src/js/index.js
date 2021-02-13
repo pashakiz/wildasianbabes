@@ -66,7 +66,8 @@ $(function() {
             }
         });
 
-        //slider (user_list extra) for mobile only
+        //sliders fot user_list page
+        owlInit('.user-list');
         owlInit('.user-list-extra');
 
     });
@@ -85,14 +86,24 @@ $(function() {
 
     //init owl carousel for custom screen width
     function owlInit(el_class) {
-        if (window.innerWidth < 1200) {
+        if (window.innerWidth > 768) {
             $(el_class).addClass('owl-carousel');
             $('.owl-carousel' + el_class).owlCarousel({
                 loop: true,
-                dots: true,
                 items: 2,
-                margin: 22,
-                autoWidth: true
+                margin: 0,
+                autoWidth: true,
+                responsive:{
+                    768:{
+                        margin: 30
+                    },
+                    992:{
+                        margin: 60
+                    },
+                    1200:{
+                        margin: 0
+                    },
+                }
             });
         } else {
             $('.owl-carousel' + el_class).owlCarousel('destroy');
@@ -101,6 +112,7 @@ $(function() {
     }
 
     $(window).resize(function() {
+        owlInit('.user-list');
         owlInit('.user-list-extra');
     });
 
