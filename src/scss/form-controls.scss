@@ -683,12 +683,20 @@ textarea.form-control {
     line-height: 9px;
     padding: 10px 20px;
     text-align: center;
+    &::after {
+      top: 3px;
+      left: 5px;
+    }
     @media (min-width: $user_list_item_breakpoint) {
       width: 282px;
       height: 76px;
       font-size: 17px;
       line-height: 19px;
       padding: 26px 35px 24px;
+      &::after {
+        top: 6px;
+        left: 11px;
+      }
     }
   }
   &.btn_3 { //change photo
