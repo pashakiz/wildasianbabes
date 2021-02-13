@@ -44,30 +44,28 @@ $(function() {
 
         owlDotsBeauty('.user-profile-slider');
 
-        //slider (Profile gallery) for desktop
-        $('.owl-carousel.user-list_slider').owlCarousel({
+        //slider for SignUp/Login pages
+        $('.owl-carousel.user-list-slider-login').owlCarousel({
             loop: true,
-            dots: true,
+            dots: false,
             items: 2,
-            margin: 25,
+            margin: 30,
             autoWidth: true,
             responsive:{
+                768:{
+                    margin: 30
+                },
+                992:{
+                    margin: 60
+                },
                 1200:{
-                    margin: 25
-                },
-                1500:{
-                    dots: false,
-                    margin: 50
-                },
-                1920:{
-                    dots: false,
-                    margin: 148
+                    margin: 0
                 }
             }
         });
 
         //sliders fot user_list page
-        owlInit('.user-list');
+        owlInit('.user-list-slider');
         owlInit('.user-list-extra');
 
     });
@@ -112,7 +110,7 @@ $(function() {
     }
 
     $(window).resize(function() {
-        owlInit('.user-list');
+        owlInit('.user-list-slider');
         owlInit('.user-list-extra');
     });
 

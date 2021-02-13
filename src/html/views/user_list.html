@@ -1,10 +1,13 @@
 <%= _.template(require('./../includes/header.html'))() %>
+    <script>
+        document.querySelector('.header.header_page').classList.add('header_pagelist');
+    </script>
     <div id="page-preloader" class="preloader">
         <div class="loader"></div>
     </div>
     <main class="main">
         <div class="container">
-            <div class="user-list"> <!-- adding 'owl-carousel' by js -->
+            <div class="user-list user-list-slider"> <!-- adding 'owl-carousel' by js -->
                 <div class="user-list-item">
                     <div class="user-list-item__pic">
                         <div class="user-list-item__img" style="background-image: url('img/photos/user-01.jpg');">

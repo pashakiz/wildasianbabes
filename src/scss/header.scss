@@ -105,6 +105,19 @@
   }
 }
 
+.header_pagelist {
+  margin-bottom: 0;
+  @media (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media (min-width: 992px) {
+    margin-bottom: 100px;
+  }
+  @media (min-width: 1920px) {
+    margin-bottom: 100px;
+  }
+}
+
 .header__row {
   padding: 20px 0;
   @media (min-width: 992px) {
