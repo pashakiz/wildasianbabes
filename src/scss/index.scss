@@ -1,6 +1,13 @@
 .index-content {
+  padding-top: 60px;
+  @media (min-width: 1200px) {
+    padding-top: 80px;
+  }
+  @media (min-width: 1920px) {
+    padding-top: 111px;
+  }
   p {
-    line-height: 40px;
+    line-height: 32px;
     @media (min-width: 1200px) {
       font-size: 18px;
       line-height: 40px;
@@ -8,41 +15,110 @@
   }
 }
 
-.collage {
-  overflow: hidden;
-  margin-bottom: 58px;
-  @media (min-width: 992px) {
-    overflow: visible;
-    position: relative;
-    margin-bottom: 66px;
+.index-content__xs {
+  text-transform: uppercase;
+  @media (min-width: 1200px) {
+    text-transform: none;
   }
+  @media (min-width: 1920px) {
+    display: none;
+  }
+}
+
+.index-content__row {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 1920px) {
+    flex-direction: row;
+  }
+}
+
+.index-content__col1 {
+  @media (min-width: 1920px) {
+    width: 33%;
+    min-width: 33%;
+    max-width: 33%;
+    padding-right: 64px;
+  }
+}
+.index-content__col2 {
+  display: none;
+  @media (min-width: 1920px) {
+    width: 34%;
+    min-width: 34%;
+    max-width: 34%;
+    display: block;
+  }
+}
+.index-content__col3 {
+  @media (min-width: 1920px) {
+    width: 33%;
+    min-width: 33%;
+    max-width: 33%;
+    padding-left: 64px;
+  }
+}
+
+.h1__index-content-xs {
+  @media (min-width: 992px) {
+    margin-bottom: 55px;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 90px;
+  }
+  @media (min-width: 1920px) {
+    display: none;
+  }
+}
+.h1__index-content-xl {
+  display: none;
+  @media (min-width: 1920px) {
+    display: block;
+    color: $font_color;
+    font-size: 65px;
+    line-height: 111px;
+    margin-bottom: 110px;
+  }
+}
+
+.collage-xs {
+  width: calc(100% + 30px);
+  overflow: hidden;
+  margin: 0 -15px 28px;
+  @media (min-width: 400px) {
+    margin: 0 -15px 45px;
+  }
+  @media (min-width: 576px) {
+    width: 100%;
+    overflow: visible;
+    margin: 0 0 45px;
+  }
+  @media (min-width: 992px) {}
   @media (min-width: 1200px) {
     margin-bottom: 99px;
   }
   @media (min-width: 1500px) {
     margin-bottom: 130px;
   }
-  @media (min-width: 1920px) {
-    margin-bottom: 195px;
-  }
+}
+
+.collage-xl {
+  width: 100%;
 }
 
 .collage__img_xs {
   display: block;
-  width: 100%;
-  @media (min-width: 768px) {
+  width: 166%;
+  position: relative;
+  left: -38%;
+  @media (min-width: 576px) {
     position: static;
     width: 100%;
   }
-  @media (min-width: 992px) {
-    display: none;
-  }
+  @media (min-width: 768px) {}
+  @media (min-width: 992px) {}
 }
 
-.collage__img_lg {
-  display: none;
-  @media (min-width: 992px) {
-    display: block;
-    width: 100%;
-  }
+.collage__img_xl {
+  width: 100%;
 }
